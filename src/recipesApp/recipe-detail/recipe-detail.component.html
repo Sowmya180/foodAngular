@@ -1,0 +1,23 @@
+<div class="search-wrapper">
+    <input
+      type="text"
+      placeholder="Search for a recipe..."
+      [(ngModel)]="searchTerm"
+      (input)="onSearch()"
+    />
+  </div>
+  
+  <div class="meal-grid">
+    <div
+      class="meal-card"
+      *ngFor="let recipe of filteredRecipes"
+      (click)="showRecipeDetails(recipe.idMeal)"
+    >
+      <h4>{{ recipe.strCategory }}</h4>
+      <img [src]="recipe.strMealThumb" alt="{{ recipe.strMeal }}" />
+      <p>{{ recipe.strMeal }}</p>
+    </div>
+  </div>
+  
+  <app-recipe-modal *ngIf="selectedRecipe" [recipe]="selectedRecipe" (closeModal)="closeModal()"></app-recipe-modal>
+  

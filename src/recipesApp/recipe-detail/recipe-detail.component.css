@@ -1,0 +1,82 @@
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 7rem 0rem 0rem 0rem;
+  position: relative;
+}
+
+.search-wrapper input {
+  width: 50%;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border: 2px solid #ff9800; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.2);
+  transition: all 0.3s ease;
+  background-color: #fffdf7;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.search-wrapper input::placeholder {
+  color: #ff8f00;
+  font-weight: 500;
+}
+
+.search-wrapper input:focus {
+  outline: none;
+  border-color: #ff6f00;
+  box-shadow: 0 0 8px rgba(255, 111, 0, 0.4);
+  background-color: #fff8ed;
+}
+
+  .meal-grid {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .meal-card {
+    width: 15rem;
+    height: 18rem;
+    background-color: rgba(253, 167, 76, 0.5);
+    padding: 1rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .meal-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .meal-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .meal-card h4 {
+    position: absolute;
+    top: 10px;
+    left: 22px;
+    background-color: rgba(255, 87, 34, 0.9);
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.85rem;
+    z-index: 1;
+  }
+  
+  .meal-card p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-top: 0.75rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    z-index: 1;
+    position: relative;
+  }
+    

@@ -1,0 +1,13 @@
+<div class="modal-backdrop" (click)="close()"></div>
+<div class="modal-content">
+  <button class="close-btn" (click)="close()">×</button>
+  <h2>{{ recipe?.strMeal }}</h2>
+  <img class="modal-img" [src]="recipe?.strMealThumb" alt="Meal Image" />
+
+  <p><strong>Instructions:</strong></p>
+  <ul>
+    <li *ngFor="let step of steps; let i = index">
+      <strong>Step {{ i + 1 | number: '2.0' }}:</strong> {{ step }}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,13 @@
+<div class="blog-container">
+    <h1>Foodie Blog</h1>
+  
+    <div class="blog-card" *ngFor="let post of posts">
+      <img [src]="post.imageUrl" alt="{{ post.title }}" />
+      <div class="blog-content">
+        <h2>{{ post.title }}</h2>
+        <p class="excerpt">{{ post.excerpt }}</p>
+        <a [href]="post.linkBlog" class="read-more" target="_blank" rel="noopener">Read More →</a>
+      </div>
+    </div>
+  </div>
+  

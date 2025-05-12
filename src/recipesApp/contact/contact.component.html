@@ -1,0 +1,32 @@
+<div class="recipe-form-container">
+  <h1 style="text-align: center; color: #5a2900; font-size: 2rem; margin-bottom: 1rem;">
+    🍕🥗🍰 Submit Your Recipe & Inspire the World! 🍜🍩🍛
+  </h1>
+  <p style="text-align: center; font-size: 0.8rem; color: #7d0000;">
+    Got a delicious creation? 🍳 Share your go-to dish and let food lovers everywhere try it out! 🌍🍴
+  </p>
+  <form (ngSubmit)="submitRecipe()" #recipeForm="ngForm">
+      <div class="form-group" style=" color: #823b00">
+        <label for="title">Recipe Title</label>
+        <input type="text" id="title" name="title" [(ngModel)]="title" required />
+      </div>
+  
+      <div class="form-group" style=" color: #823b00">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" [(ngModel)]="description" required></textarea>
+      </div>
+  
+      <div class="form-group" style=" color: #823b00">
+        <label for="ingredients">Ingredients</label>
+        <textarea id="ingredients" name="ingredients" [(ngModel)]="ingredients" required></textarea>
+      </div>
+  
+      <div class="form-group" style=" color: #823b00">
+        <label for="instructions">Instructions</label>
+        <textarea id="instructions" name="instructions" [(ngModel)]="instructions" required></textarea>
+      </div>
+  
+      <button type="submit" [disabled]="!recipeForm.valid">Submit Recipe</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,28 @@
+<div class="upload-recipe-container">
+    <h1>Share Your Recipe</h1>
+    <form (ngSubmit)="onSubmit()" #recipeForm="ngForm">
+      
+      <label for="title">Recipe Title</label>
+      <input type="text" id="title" name="title" [(ngModel)]="recipe.title" required />
+  
+      <label for="description">Short Description</label>
+      <textarea id="description" name="description" [(ngModel)]="recipe.description" rows="3" required></textarea>
+  
+      <label for="ingredients">Ingredients</label>
+      <textarea id="ingredients" name="ingredients" [(ngModel)]="recipe.ingredients" rows="4" required></textarea>
+  
+      <label for="steps">Preparation Steps</label>
+      <textarea id="steps" name="steps" [(ngModel)]="recipe.steps" rows="5" required></textarea>
+  
+      <label for="image">Upload Image</label>
+      <input type="file" id="image" (change)="onImageSelected($event)" accept="image/*" />
+  
+      <div class="preview" *ngIf="imagePreview">
+        <p>Image Preview:</p>
+        <img [src]="imagePreview" alt="Recipe preview" />
+      </div>
+  
+      <button type="submit" [disabled]="!recipeForm.form.valid">Submit Recipe</button>
+    </form>
+  </div>
+  

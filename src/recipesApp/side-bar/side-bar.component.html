@@ -1,0 +1,11 @@
+<div class="sidebar" [class.hidden]="!isVisible">
+  <ul>
+    <li
+      *ngFor="let cat of categories"
+      (click)="selectCategory(cat.strCategory)"
+      [class.selected]="cat.strCategory === selectedCategory"
+    >
+      {{ cat.strCategory }}
+    </li>
+  </ul>
+</div>
