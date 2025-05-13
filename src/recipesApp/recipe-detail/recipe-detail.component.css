@@ -80,3 +80,9 @@
     position: relative;
   }
     
+
+  @media (max-width: 768px) {
+    .search-wrapper {
+      margin: 9rem 0rem 0rem 0rem;  
+    }
+  }

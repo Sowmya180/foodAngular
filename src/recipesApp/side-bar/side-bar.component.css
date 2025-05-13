@@ -41,3 +41,32 @@
   font-weight: bold;
   color: #bf360c;
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 90%;
+    height: auto;
+    padding: 9rem 1rem 1rem 1rem;
+    box-shadow: none;
+    background-color: rgba(241, 124, 0, 0.1);
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .sidebar ul li {
+    margin-bottom: 0;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}

@@ -47,3 +47,55 @@
     cursor: not-allowed;
   }
   
+  @media (max-width: 768px) {
+    .recipe-form-container {
+      width: 90%;
+      margin: 9rem auto;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+      line-height: 1.3;
+      text-align: center;
+      margin-bottom: 1.2rem;
+    }
+  
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+  
+    label {
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+  
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 0.95rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      margin-top: 1rem;
+      background-color: #e07b00;
+      border-radius: 6px;
+    }
+  
+    .recipe-form-container p {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-bottom: 1.2rem;
+      color: #333;
+    }
+  }
+  

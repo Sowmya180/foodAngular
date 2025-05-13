@@ -46,3 +46,8 @@
     left: 0;
   }
   
+  @media (max-width: 768px) {
+    .about-container{
+      margin: 9rem 1rem 1rem 1rem;
+    }
+  }

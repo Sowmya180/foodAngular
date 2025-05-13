@@ -60,3 +60,40 @@
     color: #e66a00;
   }
   
+  @media (max-width: 768px) {
+    .blog-container {
+      margin: 10rem 1rem;
+      padding: 1rem;
+    }
+  
+    .blog-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .blog-card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  
+    .blog-content {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .blog-content h2 {
+      font-size: 1.2rem;
+    }
+  
+    .blog-content .excerpt {
+      font-size: 0.95rem;
+    }
+  
+    .read-more {
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+  }
+  
